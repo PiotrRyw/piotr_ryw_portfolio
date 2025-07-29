@@ -7,15 +7,12 @@ permalink: /art/2025/07/Hyena-project.html
 ---
 A study on organic anatomy and Blender's hair system utilising Geometry Nodes.
 
-{% for file in site.static_files %}
-- `{{ file.path }}`
-{% endfor %}
 
 {% assign image_cat = "Hyena" %}
 {% assign subset = "artstation" %}
 {% for file in site.static_files %}
   {% if file.image and file.path contains image_cat and file.path contains subset %}
-![Image]({{ file.path }})
+![Image]{{ site.baseurl }}({{ file.path }})
   {% endif %}
 {% endfor %}
 
@@ -23,6 +20,6 @@ A study on organic anatomy and Blender's hair system utilising Geometry Nodes.
 {% assign subset = "wireframe" %}
 {% for file in site.static_files %}
   {% if file.image and file.path contains image_cat and file.path contains subset %}
-![Image]({{ file.path }})
+![Image]{{ site.baseurl }}({{ file.path }})
   {% endif %}
 {% endfor %}

@@ -7,13 +7,9 @@ permalink: /art/2025/07/3D-printed-mask.html
 ---
 A fantasy horror creature mask. Designed, 3D printed, glued and painted.
 
-{% for file in site.static_files %}
-- `{{ file.path }}`
-{% endfor %}
-
 {% assign image_cat = "Skull" %}
 {% for file in site.static_files %}
   {% if file.image and file.path contains image_cat %}
-![Image]({{ file.path }})
+![Image]{{ site.baseurl }}({{ file.path }})
   {% endif %}
 {% endfor %}
