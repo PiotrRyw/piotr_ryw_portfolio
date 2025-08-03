@@ -2,7 +2,7 @@ title: Portfolio PiotrRyw
 email: p.rywczak@gmail.com
 description: >- 
   3D art, print and manual projects portfolio website.
-baseurl: "piotr_ryw_portfolio"
+baseurl: "/piotr_ryw_portfolio"
 url: ""
 github_username:  PiotrRyw
 
