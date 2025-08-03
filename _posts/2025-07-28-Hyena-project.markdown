@@ -1,16 +1,24 @@
 ---
 layout: post
-title: "3D printed mask"
-date: 2025-07-27 10:00:00 +0200
+title:  "Hyena project"
+date:   2025-07-28 10:07:00 +0200
 categories: art
-permalink: /art/2025/07/3D-printed-mask.html
+permalink: /art/2025/07/Hyena-project.html
 ---
+A study on organic anatomy and Blender's hair system utilising Geometry Nodes.
 
-A fantasy horror creature mask. Designed, 3D printed, glued and painted.
-
-{% assign image_cat = "Skull" %}
+{% assign image_cat = "Hyena" %}
+{% assign subset = "artstation" %}
 {% for file in site.static_files %}
-{% if file.image and file.path contains image_cat %}
+  {% if file.image and file.path contains image_cat and file.path contains subset %}
 ![Image]({{ file.path | prepend:site.baseUrl }})
-{% endif %}
+  {% endif %}
+{% endfor %}
+
+{% assign image_cat = "Hyena" %}
+{% assign subset = "wireframe" %}
+{% for file in site.static_files %}
+  {% if file.image and file.path contains image_cat and file.path contains subset %}
+![Image]({{ file.path | prepend:site.baseUrl }})
+  {% endif %}
 {% endfor %}
