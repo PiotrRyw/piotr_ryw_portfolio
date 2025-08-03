@@ -11,7 +11,7 @@ A study on organic anatomy and Blender's hair system utilising Geometry Nodes.
 {% assign subset = "artstation" %}
 {% for file in site.static_files %}
   {% if file.image and file.path contains image_cat and file.path contains subset %}
-![Image]({{ file.path | prepend:site.baseUrl }})
+![Image]({{ file.path | prepend:site.baseurl }})
   {% endif %}
 {% endfor %}
 
@@ -19,6 +19,6 @@ A study on organic anatomy and Blender's hair system utilising Geometry Nodes.
 {% assign subset = "wireframe" %}
 {% for file in site.static_files %}
   {% if file.image and file.path contains image_cat and file.path contains subset %}
-![Image]({{ file.path | prepend:site.baseUrl }})
+![Image]({{ file.path | prepend:site.baseurl }})
   {% endif %}
 {% endfor %}
