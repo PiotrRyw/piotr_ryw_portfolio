@@ -10,6 +10,6 @@ A fantasy horror creature mask. Designed, 3D printed, glued and painted.
 {% assign image_cat = "Skull" %}
 {% for file in site.static_files %}
   {% if file.image and file.path contains image_cat %}
-![Image]({{ file_path | prepend:site.baseurl }})
+![Image]({{ file.path | prepend:site.baseUrl }})
   {% endif %}
 {% endfor %}
