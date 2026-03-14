@@ -13,3 +13,5 @@ Eagle inspired wings design using procedural textures.
 ![Image]({{ file.path | prepend:site.baseurl }})
   {% endif %}
 {% endfor %}
+
+![Image](\..\assets\img\feather_shader_nodes.png)
