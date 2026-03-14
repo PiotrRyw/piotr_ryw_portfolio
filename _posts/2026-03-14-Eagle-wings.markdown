@@ -7,7 +7,7 @@ permalink: /art/2025/07/eagle-wings.html
 ---
 Eagle inspired wings design using procedural textures.
 
-{% assign image_cat = "EagleWing" %}
+{% assign image_cat = "eagle_wing" %}
 {% for file in site.static_files %}
   {% if file.image and file.path contains image_cat %}
 ![Image]({{ file.path | prepend:site.baseurl }})
