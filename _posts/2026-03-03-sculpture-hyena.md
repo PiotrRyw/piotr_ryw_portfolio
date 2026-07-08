@@ -4,6 +4,8 @@ title:  "Hyena Sculpture"
 date:   2026-03-03 10:00:00 +0200
 categories: art
 permalink: /art/2025/07/sculpture-hyena.html
+featured: true
+image: /assets/img/sculpture001-001.jpg
 ---
 Hyena sculpture: Blender, PETG, resin print, acrylic paint.
 
