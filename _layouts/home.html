@@ -1,0 +1,62 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  {{ content }}
+
+  <section class="featured-projects">
+    <h2>Featured projects</h2>
+
+    <div class="featured-grid">
+
+      <a href="{{ '/2026/07/08/fox-fursuit/' | relative_url }}">
+        <img src="{{ '/assets/img/fox_fursuit_001.jpg' | relative_url }}"
+             alt="Fox fursuit">
+      </a>
+
+      <a href="{{ '/2026/07/07/sculpture/' | relative_url }}">
+        <img src="{{ '/assets/img/sculpture001-001.jpg' | relative_url }}"
+             alt="Sculpture">
+      </a>
+
+      <a href="{{ '/2026/07/06/stoat-relief/' | relative_url }}">
+        <img src="{{ '/assets/img/stoat-relief-003.jpg' | relative_url }}"
+             alt="Stoat relief">
+      </a>
+
+    </div>
+  </section>
+
+
+  {%- if site.posts.size > 0 -%}
+    <h2 class="post-list-heading">
+      {{ page.list_title | default: "Posts" }}
+    </h2>
+
+    <ul class="post-list">
+      {%- for post in site.posts -%}
+      <li>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+
+        <span class="post-meta">
+          {{ post.date | date: date_format }}
+        </span>
+
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+
+        {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul>
+
+  {%- endif -%}
+
+</div>
