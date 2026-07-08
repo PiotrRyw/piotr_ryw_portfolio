@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Eagle wing"
+title:  "Jaw mechanism for masks"
 date:   2026-07-08 10:07:00 +0200
 categories: art
 permalink: /art/2026/07/jaw-mechanism.html
