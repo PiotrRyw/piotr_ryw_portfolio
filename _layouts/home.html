@@ -5,30 +5,24 @@ layout: default
 <div class="home">
 
   {{ content }}
+<section class="featured-projects">
 
-  <section class="featured-projects">
-    <h2>Featured projects</h2>
+<h2>Featured projects</h2>
 
-    <div class="featured-grid">
+<div class="featured-grid">
 
-      <a href="{{ '/2026/07/08/fox-fursuit/' | relative_url }}">
-        <img src="{{ '/assets/img/fox_fursuit_001.jpg' | relative_url }}"
-             alt="Fox fursuit">
-      </a>
+{% for post in site.posts %}
+  {% if post.featured %}
+    <a href="{{ post.url | relative_url }}">
+      <img src="{{ post.image | relative_url }}"
+           alt="{{ post.title }}">
+    </a>
+  {% endif %}
+{% endfor %}
 
-      <a href="{{ '/2026/07/07/sculpture/' | relative_url }}">
-        <img src="{{ '/assets/img/sculpture001-001.jpg' | relative_url }}"
-             alt="Sculpture">
-      </a>
+</div>
 
-      <a href="{{ '/2026/07/06/stoat-relief/' | relative_url }}">
-        <img src="{{ '/assets/img/stoat-relief-003.jpg' | relative_url }}"
-             alt="Stoat relief">
-      </a>
-
-    </div>
-  </section>
-
+</section>
 
   {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">
