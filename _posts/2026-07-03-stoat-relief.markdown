@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Jaw mechanism for masks"
+title:  "Stoat Relief"
 date:   2026-07-03 10:00:00 +0200
 categories: art
 permalink: /art/2026/07/stoat-relief.html
